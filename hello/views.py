@@ -8,7 +8,7 @@ from .models import Greeting
 def index(request):
     print("index")
     # return HttpResponse('Hello from Python!')
-    query = request.GET.get("q", "飛沫")
+    query = request.GET.get("q", "")
     yomi = hiraganize(query)
     print(query, yomi)
 
